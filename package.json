@@ -1,0 +1,49 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Kryptos-Team/design-system.git",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "coolors-to-hex": "^1.0.3",
+    "flow-bin": "^0.141.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "styled-tools": "^1.7.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11",
+    "babel-eslint": "^10.1.0",
+    "documentation": "^13.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-flowtype-errors": "^4.4.0",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "coverage": "npm test -- --coverage",
+    "docs": "documentation readme src --section=Documentation",
+    "flow": "flow check",
+    "lint": "eslint .storybook src",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest"
+  }
+}
